@@ -1,0 +1,299 @@
+.box_message_order {
+    position: fixed;
+    z-index: 222;
+    padding: 5px;
+    border-radius: 5px;
+    top: 100px;
+    right: -999px;
+    transition: 0.5s;
+    background-color: #f2f2f2;
+    background-color: #f34f3f;
+}
+
+.box_message_order .link_message {
+    display: block;
+    text-decoration: none;
+}
+
+.box_message_order .link_message:hover .box_sub_message_order {
+    opacity: 0.7;
+}
+
+.box_message_order .box_sub_message_order {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 500px;
+    transition: 0.5s;
+}
+
+.box_message_order .main_image {
+    width: 25%;
+    height: 100%;
+}
+
+.box_message_order .main_image .item_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box_message_order .main_content {
+    width: 75%;
+}
+
+.box_message_order .main_content .header_text {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.Show_post_content_main .footer_box .box_count_view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box_main_left
+    .Show_post_content_main
+    .box_show_comment
+    .single-comment-post
+    .box_main_inf_user
+    .box_content {
+    width: 100%;
+}
+
+.box_header_sub .btn_add_friend {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 36px;
+    background-color: var(--main_highlight);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.box_header_sub .btn_add_friend:hover {
+    opacity: 0.9;
+}
+
+.box_header_sub .btn_remove_friend {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 36px;
+    background-color: var(--main_highlight);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.box_header_sub .btn_remove_friend:hover {
+    opacity: 0.9;
+}
+
+:root {
+    --main_color_post: #f2f2f2;
+    --main_text: #222222;
+    --main_highlight: #f34f3f;
+}
+
+/* Phần cộng đồng */
+#section-my-post-home {
+}
+
+/* phần bài viết */
+.show_post_content_main {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--main_color_post);
+    margin-bottom: 25px;
+    box-shadow: 0 0 8px aliceblue;
+    width: 100%;
+}
+
+.show_post_content_main .header_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.show_post_content_main .header_box .box_header_infor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.show_post_content_main .header_box .box_header_infor .box_img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.show_post_content_main .header_box .box_header_infor .box_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.show_post_content_main .header_box .box_header_infor .box_name_time {
+}
+
+.show_post_content_main .header_box .box_header_infor .box_name_time h4 {
+    margin: 0;
+}
+
+.show_post_content_main .header_box .box_header_infor .box_name_time p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.show_post_content_main .body_box .box_main_img {
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 6px 0;
+}
+
+.show_post_content_main .body_box .box_main_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.show_post_content_main .body_box .box_main_link_post {
+    background-color: rgba(207, 90, 90, 0.1);
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.show_post_content_main .body_box .box_main_link_post p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.show_post_content_main .body_box .box_main_link_post .name_link_post {
+    margin: 0;
+    font-size: 18px;
+}
+
+.show_post_content_main .footer_box .box_count_view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.show_post_content_main .footer_box .box_operation {
+    padding: 8px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.show_post_content_main .footer_box .box_operation .box_item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.show_post_content_main .footer_box .box_operation .box_item:hover {
+    background-color: rgba(243, 79, 63, 0.5);
+    color: #fff;
+}
+
+.show_post_content_main .footer_box .box_operation .box_item i {
+    margin-right: 10px;
+}
+
+.show_post_content_main .footer_box .box_operation .box_item p {
+    margin: 0;
+}
+
+.show_post_content_main .footer_box .box_input_comment {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 10px;
+    border-radius: 36px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.show_post_content_main .footer_box .box_input_comment .inputComment {
+    background: 0 !important;
+    border: 0 !important;
+    outline: none !important;
+    color: #fff;
+    width: 100%;
+}
+
+.show_post_content_main
+    .box_show_comment
+    .single-comment-post
+    .box_main_inf_user {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.show_post_content_main .box_show_comment .list-comment,
+.show_post_content_main
+    .box_show_comment
+    .list-comment
+    .single-comment-post
+    ul {
+    list-style: none;
+}
+
+.show_post_content_main
+    .box_show_comment
+    .single-comment-post
+    .box_main_inf_user
+    .box_avatar {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.show_post_content_main
+    .box_show_comment
+    .single-comment-post
+    .box_main_inf_user
+    .box_avatar
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.show_post_content_main
+    .box_show_comment
+    .single-comment-post
+    .box_main_inf_user
+    .box_content {
+    padding: 8px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.show_post_content_main
+    .box_show_comment
+    .single-comment-post
+    .box_main_inf_user-children {
+    margin-top: 8px;
+    margin-left: 50px;
+}

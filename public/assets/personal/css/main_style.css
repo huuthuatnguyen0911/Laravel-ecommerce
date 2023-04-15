@@ -1,0 +1,359 @@
+.box_backToHome .ul_backToHome {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.ul_backToHome .icon_toggle_light {
+}
+
+.ul_backToHome .icon_toggle_light .toggle-btn {
+    position: relative;
+    width: 45px;
+    height: 22px;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+.ul_backToHome .icon_toggle_light input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* First toggle btn */
+
+.ul_backToHome .icon_toggle_light #_1st-toggle-btn span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    opacity: 1;
+    background-color: #222222;
+    box-shadow: 0px 2px 25px #d9d9d9;
+    border-radius: 40px;
+    transition: 0.2s ease background-color, 0.2s ease opacity;
+}
+
+.ul_backToHome .icon_toggle_light #_1st-toggle-btn span:before,
+.ul_backToHome .icon_toggle_light #_1st-toggle-btn span:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: 0.5s ease transform, 0.2s ease background-color;
+}
+
+.ul_backToHome .icon_toggle_light #_1st-toggle-btn span:before {
+    background-color: #222222;
+    transform: translate(-5px, -5px);
+    z-index: 1;
+}
+
+.ul_backToHome .icon_toggle_light #_1st-toggle-btn span:after {
+    background-color: #fff;
+    transform: translate(1px, 0px);
+    z-index: 0;
+}
+
+.ul_backToHome
+    .icon_toggle_light
+    #_1st-toggle-btn
+    input[type="checkbox"]:checked
+    + span {
+    background-color: #fff;
+}
+
+.ul_backToHome
+    .icon_toggle_light
+    #_1st-toggle-btn
+    input[type="checkbox"]:active
+    + span {
+    opacity: 0.5;
+}
+
+.ul_backToHome
+    .icon_toggle_light
+    #_1st-toggle-btn
+    input[type="checkbox"]:checked
+    + span:before {
+    background-color: #fff;
+    transform: translate(-41px, 0px);
+}
+
+.ul_backToHome
+    .icon_toggle_light
+    #_1st-toggle-btn
+    input[type="checkbox"]:checked
+    + span:after {
+    background-color: #222222;
+    transform: translate(-19px, 0px);
+}
+
+/* First toggle btn completed */
+
+/* css order my start */
+#section-waiting-order {
+}
+
+#section-waiting-order .box_main_content h3 {
+    position: relative;
+    margin: 0;
+    display: inline-block;
+}
+
+#section-waiting-order .box_main_content h3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+    bottom: -5px;
+    color: #313131;
+}
+
+/* css order my end */
+
+/* notifical */
+.box_message_order {
+    position: fixed;
+    z-index: 222;
+    padding: 5px;
+    border-radius: 5px;
+    top: 100px;
+    right: -999px;
+    transition: 0.5s;
+    background-color: #f2f2f2;
+    background-color: #f34f3f;
+}
+
+.box_message_order .link_message {
+    display: block;
+    text-decoration: none;
+}
+
+.box_message_order .link_message:hover .box_sub_message_order {
+    opacity: 0.7;
+}
+
+.box_message_order .box_sub_message_order {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 500px;
+    transition: 0.5s;
+}
+
+.box_message_order .main_image {
+    width: 25%;
+    height: 100%;
+}
+
+.box_message_order .main_image .item_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box_message_order .main_content {
+    width: 75%;
+}
+
+.box_message_order .main_content .header_text {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Hiển thị lượt đếm thông báo */
+.item_notification {
+    position: absolute;
+    top: -8px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #f34f3f;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Bài viết */
+#main_content_posts .box_header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f34f3f;
+}
+
+#main_content_posts .box_header .title_text {
+    margin: 0;
+}
+
+#main_content_posts .box_header .btn_add_posts {
+    border: 2px solid #f34f3f;
+    padding: 5px 8px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+#main_content_posts .box_header .btn_add_posts:hover {
+    background-color: #f34f3f;
+}
+
+#main_content_posts .box_header .btn_add_posts i {
+    margin-left: 5px;
+}
+
+/* tao bài viết */
+.main_box_page_posts {
+    width: 100%;
+}
+
+.main_box_page_posts #header_main {
+    padding: 15px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.main_box_page_posts #header_main .box_to_bacK .btn_bacK-home {
+    color: #222222;
+}
+
+.main_box_page_posts #formCreatePost .box_submit_post {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main_box_page_posts #formCreatePost .box_submit_post #inputStatusPost {
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.main_box_page_posts #formCreatePost .box_submit_post #inputSubmitPost {
+}
+
+/* bai viet cas nhận trên trang chủ */
+/* #section-my-post-home .show_post_content_main .box_name_time h4{
+    color: red;
+} */
+
+body {
+    margin-top: 20px;
+}
+
+.chat-online {
+    color: #34ce57;
+}
+
+.chat-offline {
+    color: #e4606d;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    min-height: 550px;
+    overflow-y: scroll;
+    max-height: 550px;
+}
+
+.box_list_friends {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    overflow-y: scroll;
+    max-height: 600px;
+}
+
+.chat-message-left,
+.chat-message-right {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.chat-message-left {
+    margin-right: auto;
+}
+
+.chat-message-right {
+    flex-direction: row-reverse;
+    margin-left: auto;
+}
+
+.py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.flex-grow-0 {
+    flex-grow: 0 !important;
+}
+
+.border-top {
+    border-top: 1px solid #dee2e6 !important;
+}
+
+.sc-bg-body {
+    background-color: #252525;
+}
+
+.change_bg_color_list {
+    background-color: #252525;
+}
+
+.box_text_message {
+    border-radius: 20px;
+}
+
+.box_text_message_you {
+    background-color: #f34f3f;
+    color: #fff;
+}
+
+.box_text_message_friend {
+    background-color: #3e4042;
+    color: #fff;
+}
+
+/* .box_text_message_friend{
+    background-color: #e4e6eb;
+    color: #000;
+} */
